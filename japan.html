@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="./img/Menu.png" type="image/x-icon">
+    <title>Menu</title>
+</head>
+<style>
+    body {
+        background-color: beige;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+    h5,
+    h4 {
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-weight: bold;
+    }
+
+    .carousel-item img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="container-xxl  p-0 ">
+        <div class="container-xxl position-relative p-0 header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 position-sticky ">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-warning  m-0">Puthy</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">M
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
+                        <a href="services.html" class="nav-item nav-link ">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu m-0">
+                                <!-- <a href="cambodia.html" class="dropdown-item">Cambodia</a> -->
+                                <a href="cambodia.html" class="dropdown-item">All Food</a>
+                                <a href="china.html" class="dropdown-item">Europe Food</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link ">Contact</a>
+                    </div>
+                    <a href="booking.html" class="btn btn-warning py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5 position-relative">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-12 text-center text-lg-start">
+                            <h1 class="display-3 animated slideInLeft text-center text-warning">Food Menu of Japan
+                            </h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2 text-center">Tempor erat elitr rebum at
+                                clita. Diam <br>
+                                dolor diam ipsum sit. Aliqu diam amet diam
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container-xxl py-5" style="background-color: beige;">
+                <div class="container">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="section-title ff-secondary text-center text-warning fw-normal">__Food Menu__</h5>
+                        <h1 class="mb-5">Japan Food ❤️ </h1>
+                    </div>
+                    <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                            <li class="nav-item">
+                                <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                                    data-bs-toggle="pill" href="#tab-1">
+                                    <i class="fa fa-coffee fa-2x text-warning text-xl"></i>
+                                    <div class="ps-3">
+                                        <small class="text-body">Popular</small>
+                                        <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                    href="#tab-2">
+                                    <i class="fa fa-hamburger fa-2x text-warning"></i>
+                                    <div class="ps-3">
+                                        <small class="text-body">Special</small>
+                                        <h6 class="mt-n1 mb-0">Launch</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
+                                    href="#tab-3">
+                                    <i class="fa fa-utensils fa-2x text-warning"></i>
+                                    <div class="ps-3">
+                                        <small class="text-body">Lovely</small>
+                                        <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row g-4  p-4 food1 ">
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234); ">
+                                            <div class="dis ">
+                                                Off 30%
+                                            </div>
+                                            <img class="rounded mt-5" src="./img/tempura.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning">
+                                            <h5 class="text-warning">Tempura</h5>
+
+                                            <h5 class="text-warning">Price: 20$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sushi.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sushi</h5>
+                                            <h5 class="text-warning">Price: 15$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sashimi-min-removebg-preview.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sashimi</h5>
+                                            <h5 class="text-warning">Price: 35$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/onigiri.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Onigiri</h5>
+                                            <h5 class="text-warning">Price: 25$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/ramen.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Ramen</h5>
+                                            <h5 class="text-warning">Price: 24$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/japaensecurry.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Japaensecurry</h5>
+                                            <h5 class="text-warning">Price: 30$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/jepan1.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Omurice</h5>
+                                            <h5 class="text-warning">Price: 40$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sashimi-min-removebg-preview.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sashimi</h5>
+                                            <h5 class="text-warning">Price: 35$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row g-4  p-4 food1 ">
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234); ">
+                                            <div class="dis ">
+                                                Off 30%
+                                            </div>
+                                            <img class="rounded mt-5" src="./img/tempura.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning">
+                                            <h5 class="text-warning">Tempura</h5>
+
+                                            <h5 class="text-warning">Price: 20$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sushi.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sushi</h5>
+                                            <h5 class="text-warning">Price: 15$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sashimi-min-removebg-preview.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sashimi</h5>
+                                            <h5 class="text-warning">Price: 35$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/onigiri.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Onigiri</h5>
+                                            <h5 class="text-warning">Price: 25$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/ramen.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Ramen</h5>
+                                            <h5 class="text-warning">Price: 24$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/japaensecurry.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Japaensecurry</h5>
+                                            <h5 class="text-warning">Price: 30$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/jepan1.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Omurice</h5>
+                                            <h5 class="text-warning">Price: 40$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sashimi-min-removebg-preview.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sashimi</h5>
+                                            <h5 class="text-warning">Price: 35$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane fade show p-0">
+                                <div class="row g-4  p-4 food1 ">
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234); ">
+                                            <div class="dis ">
+                                                Off 30%
+                                            </div>
+                                            <img class="rounded mt-5" src="./img/tempura.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning">
+                                            <h5 class="text-warning">Tempura</h5>
+
+                                            <h5 class="text-warning">Price: 20$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sushi.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sushi</h5>
+                                            <h5 class="text-warning">Price: 15$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sashimi-min-removebg-preview.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sashimi</h5>
+                                            <h5 class="text-warning">Price: 35$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/onigiri.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Onigiri</h5>
+                                            <h5 class="text-warning">Price: 25$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/ramen.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Ramen</h5>
+                                            <h5 class="text-warning">Price: 24$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/japaensecurry.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Japaensecurry</h5>
+                                            <h5 class="text-warning">Price: 30$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam  ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/jepan1.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Omurice</h5>
+                                            <h5 class="text-warning">Price: 40$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 mb-3 mt-5 cam ">
+                                        <div class="box  rounded  "
+                                            style="height: 310px; background-color: rgb(243, 243, 234);">
+                                            <img class="rounded mt-5" src="./img/sashimi-min-removebg-preview.png" alt=""
+                                                style="width: 200px; height: 200px;">
+                                        </div>
+                                        <div class="title mt-3 border-bottom border-warning ">
+                                            <h5 class="text-warning">Sashimi</h5>
+                                            <h5 class="text-warning">Price: 35$</h5>
+                                            <ul class=""
+                                                style="display: flex; list-style-type: none; margin-left: 40px;">
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <i class="fa-solid fa-star p-1 text-warning"></i>
+                                                <li><i class="fa-regular fa-star p-1"></i></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer style="margin-top: 50px;">
+            <div class="container-xxl py-5 bg-dark">
+                <div class="container mb-5">
+                    <div class="row ">
+                        <div class="col-lg-3 col-md-6 col-12 foot">
+                            <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4">__Company__
+                            </h4>
+                            <a class="" href="">> About Us</a>
+                            <a class="" href="">> Contact Us</a>
+                            <a class="" href="">> Reservation</a>
+                            <a class="" href="">> Privacy Policy</a>
+                            <a class="" href="">> Terms & Condition</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 foot">
+                            <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4">__Contact__
+                            </h4>
+                            <p class="mb-2 text-white "><i class="fa fa-map-marker-alt me-3 text-white"></i>123 Street,
+                                Phnom Penh, Cambodia</p>
+                            <p class="mb-2 text-white"><i class="fa fa-phone-alt me-3 text-white"></i>+012 345 67890</p>
+                            <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>info@example.com
+                            </p>
+                            <div class="d-flex p-2 social ">
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-twitter text-primary"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-facebook-f text-primary"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-youtube text-danger"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-linkedin-in text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 foot">
+                            <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4">__Opening__
+                            </h4>
+                            <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                            <p class="text-white">09AM - 09PM</p>
+                            <h5 class="text-light fw-normal">Sunday</h5>
+                            <p class="text-white">10AM - 08PM</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 foot">
+                            <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4">__Newsletter__
+                            </h4>
+                            <p class="text-white">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control border-primary w-100 py-3 ps-4 pe-5 form" type="text"
+                                    placeholder="Your email">
+                                <button type="button"
+                                    class="btn btn-warning py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <br>
+</body>
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</html>

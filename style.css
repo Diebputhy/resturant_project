@@ -1,0 +1,298 @@
+/********** Template CSS **********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+button{
+    background-color: var(--primary);
+}
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    font-size: 15px;
+    color: var(--light) !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+   
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+.navbar-dark .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-brand img {
+    max-height: 45px;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    .navbar-dark .navbar-brand img {
+        max-height: 45px;
+    }
+    .service{
+       display: contents;
+       
+    }
+    .service .box{
+        width: 100%;
+        height:150px ;
+       background-color: red;
+       
+    }
+    .about{
+        margin-left: 20px;
+    }
+    .section-title{
+        margin-top: 10px;
+        
+    }
+    .box img{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .carousel-inner .carousel-item img {
+        height: 400px;
+        width: 300px;
+        object-fit: contain;
+        
+        
+      }
+    .about .img{
+        margin-top: 0px;
+    }
+    .about .img img{
+        width: 120px;
+        height: 120px;
+    }
+   
+   
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: transparent !important;
+    }
+    
+    .sticky-top.navbar-dark {
+        position: fixed;
+        background: var(--dark) !important;
+    }
+    
+}
+
+
+/*** Hero Header ***/
+.hero-header {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(./img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+
+.hero-header img {
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(232, 226, 226, 0.599);
+}
+
+ .service-item .box{
+    background-color: rgb(245, 236, 236); 
+} 
+.service-item :hover {
+    background-color: #FEA116;
+    
+}
+.service-item .box i{
+    color: #FEA116;
+}
+.service-item .box:hover i{
+    color: white;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 15px;
+   
+}
+/* about */
+
+.tab-class ul li a{
+    text-decoration: none;
+    color: #FEA116;
+}
+.fed .ter i{
+    color: #FEA116;
+}
+.fed:hover .ter{
+    background-color: #FEA116;
+}
+.fed .ter:hover i{
+    color: white;
+}
+.foot a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    
+}
+.social a {
+    margin-right: 10px;
+    border-radius: 50%;
+    
+}
+/* .cam .box{
+    box-shadow: 4px 4px 4px gray;
+} */
+.cam .box{
+    background-color:#efe7e7;
+}
+/* cambodia food */
+.cam :hover img{
+    transform: scale(107%);  
+   
+   
+}
+.cam .box{
+    background-color: rgb(243, 243, 234);
+}
+.cam .box:hover{
+    background-color: rgb(216, 204, 204);
+}
+/* .rate{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 80px;
+
+    
+}
+.rate i {
+    color:#eca61a;
+    margin-top: 25px;
+    font-size: 22px;
+    /* background-color:;
+    border-radius: 5px; */
+    /* display: none; */
+    
+/* //}  */
+
+ /* active menu */
+ .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+.nav-pills .nav-item .active{
+    border-bottom: 2px solid #FEA116;
+}
+
+/*** Testimonial ***/
+/* .testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: var(--light) !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+} */
+ /* menu */
+ .dis{
+    width: 70px;
+    height: 35px;
+    background-color: #FEA116;
+    position: absolute;
+    border-radius: 5px;
+    
+    
+}
+ /* About */
+ .about:hover img{
+    transform: scale(103%);
+    
+}
